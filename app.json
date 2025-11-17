@@ -1,0 +1,41 @@
+{
+  "name": "NapRoute",
+  "displayName": "NapRoute",
+  "description": "Duration-based route planning for nap drives",
+  "version": "1.0.0",
+  "orientation": "portrait",
+  "icon": "./assets/icon.png",
+  "splash": {
+    "image": "./assets/splash.png",
+    "resizeMode": "contain",
+    "backgroundColor": "#4A90E2"
+  },
+  "ios": {
+    "bundleIdentifier": "com.naproute.app",
+    "buildNumber": "1",
+    "supportsTablet": true,
+    "infoPlist": {
+      "UIBackgroundModes": ["location", "audio"],
+      "NSLocationWhenInUseUsageDescription": "NapRoute needs your location to calculate nap routes starting from your current position and provide turn-by-turn navigation during your drive.",
+      "NSLocationAlwaysAndWhenInUseUsageDescription": "NapRoute needs your location to provide continuous navigation during your nap drive, even when the app is in the background.",
+      "NSUserNotificationsUsageDescription": "NapRoute sends notifications to alert you when your nap route is about to end, so you can prepare for your child waking up."
+    }
+  },
+  "android": {
+    "package": "com.naproute.app",
+    "versionCode": 1,
+    "adaptiveIcon": {
+      "foregroundImage": "./assets/adaptive-icon.png",
+      "backgroundColor": "#4A90E2"
+    },
+    "permissions": [
+      "ACCESS_FINE_LOCATION",
+      "ACCESS_COARSE_LOCATION",
+      "ACCESS_BACKGROUND_LOCATION",
+      "POST_NOTIFICATIONS",
+      "VIBRATE",
+      "WAKE_LOCK",
+      "INTERNET"
+    ]
+  }
+}
